@@ -5,6 +5,8 @@
 	<title>Jorge Ferreiro - Portfolio</title>
 	<meta charset="UTF-8" />
 	<meta name="description" content="" />
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Asap:400,700' rel='stylesheet' type='text/css'>
@@ -12,22 +14,131 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
-<body class="home">
+<body>
 
-	<header class="header">
+	<header class="header ">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html">
-					<h1>Jorge Ferreiro</h1>
+				<a href="#home">
+					<h1 class="white ">Jorge Ferreiro</h1>
+					<h1 class="black ">Jorge Ferreiro</h1>
 				</a>
 			</div>
+			<div class="title_top" id="title_web">
+				<h1>
+					Páginas web
+				</h1>
+			</div>
+			<div class="title_top" id="title_graphic">
+				<h1>
+					Diseño gráfico
+				</h1>
+			</div>
+			<div class="title_top" id="title_apps">
+				<h1>
+					Aplicaciones
+				</h1>
+			</div>
+			<nav class="nav">
+				<ul class="language">
+					<li class="selected">
+						<a href="#">
+							Español
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							English
+						</a>
+					</li>
+				</ul>
+				<ul class="menu">
+					<li>
+						<a href="#contact">
+							<span></span>
+							Contáctame
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
-	<section class="main_box" id="home_main">
-		<div class="content">
+	<div class="navigation_buttons" id="n_home" style="display:block;">
+	<ul>
+		<li>
+			<style>
+			#no_hover:hover {
+				background: transparent;
+				color: #747474;
+			}
+			</style>
+			<a id="no_hover" style=" opacity:0.5; cursor:default;" class="icon-arrow-up"></a>
+			<a href="#web" class="icon-arrow-down"></a>
+		</li>
+	</ul>
+	</div>
 
-			<div class="home_text">
+	<div class="navigation_buttons" id="n_web">
+	<ul>
+		<li>
+			<a href="#home" class="icon-arrow-up"></a>
+		</li>
+		<li>
+			<a href="#graphic" class="icon-arrow-down"></a>
+		</li>
+	</ul>
+	</div>
+	
+	<div class="navigation_buttons" id="n_graphic">
+	<ul>
+
+		<li>
+			<a href="#web" class="icon-arrow-up"></a>
+		</li>
+		<li>
+			<a href="#apps" class="icon-arrow-down"></a>
+		</li>
+	</ul>
+	</div>
+	
+	<div class="navigation_buttons" id="n_apps">
+	<ul>
+
+		<li>
+			<a href="#graphic" class="icon-arrow-up"></a>
+		</li>
+		<li>
+			<a href="#contact" class="icon-arrow-down"></a>
+		</li>
+	</ul>
+	</div>
+	
+	<div class="navigation_buttons" id="n_contact">
+	<ul>
+
+		<li>
+			<a href="#apps" class="icon-arrow-up"></a>
+		</li>
+		<style>
+		#no_hover:hover {
+			background: transparent;
+			color: #747474;
+		}
+		</style>
+
+		<li>
+			<a id="no_hover" style=" opacity:0.5; cursor:default;" class="icon-arrow-down"></a>
+		</li>
+	</ul>
+	</div>
+
+	<section class="main" id="home">
+		<div class="content">
+		
+			<!-- CONTENT -->
+
+			<div class="text">
 				<h1>
 					Diseñador &amp;	programador web
 				</h1>
@@ -35,19 +146,180 @@
 					Creo y desarrollo páginas web, logotipos, interfaces gráficas y aplicaciones
 				</h2>
 				<div class="button_portfolio">
-					<a href="portfolio.html">
+					<a href="#web">
 						Ver mis trabajos
 					</a>
 				</div>
 			</div>
 
-			<div class="black_background"></div>
+		</div>
 
+		<div class="flecha_down">
+			<a href="#web" class="icon-down">
+			</a>
+		</div>
+		<div class="black_background"></div>
+	</section>
+
+	<section class="main " id="web">
+		<div class="content">
+			
+			<!-- Graphic design -->
+
+			<div class="graphic_design">
+				
+				<div class="box top_left" style="background-image:url(http://www.websmultimedia.com/style/img/trabajos/logotipo-areco.jpg);">
+				</div>
+				<div class="box top_middle" style="background-image:url(images/mac.jpg);">
+				</div>
+				<div class="box top_right" style="background-image:url(http://www.luisan.net/identidad-corporativa/imagenes-diseno-logotipos/diseno-logotipos-kp.jpg);">
+				</div>
+
+				<!-- Second row -->
+
+				<div class="box bottom_left" style="background-image:url(http://runrun.es/wp-content/uploads/2014/07/Steve-Jobs.jpeg);">
+				</div>
+
+				<div class="box bottom_middle" style="background-image:url(http://cdn.opensly.com/noticia/HXVZSVEYAVER39RW9AAX.jpg?t=1408067696);">
+				</div>
+
+				<div class="box bottom_right" style="background-image:url(images/mac.jpg);">
+				</div>
+
+			</div>
+		</div>
+		<div class="flecha_down">
+			<a href="#graphic" class="icon-down">
+			</a>
 		</div>
 	</section>
 
-	<footer class="home_footer">
+
+	<section class="main " id="graphic">
+		<div class="content">
+		
+			<!-- Graphic design -->
+
+			<div class="graphic_design">
+				
+				<div class="box top_left" style="background-image:url(http://www.websmultimedia.com/style/img/trabajos/logotipo-areco.jpg);">
+				</div>
+				<div class="box top_middle" style="background-image:url(images/mac.jpg);">
+				</div>
+				<div class="box top_right" style="background-image:url(http://www.luisan.net/identidad-corporativa/imagenes-diseno-logotipos/diseno-logotipos-kp.jpg);">
+				</div>
+
+				<!-- Second row -->
+
+				<div class="box bottom_left" style="background-image:url(http://runrun.es/wp-content/uploads/2014/07/Steve-Jobs.jpeg);">
+				</div>
+
+				<div class="box bottom_middle" style="background-image:url(http://cdn.opensly.com/noticia/HXVZSVEYAVER39RW9AAX.jpg?t=1408067696);">
+				</div>
+
+				<div class="box bottom_right" style="background-image:url(images/mac.jpg);">
+				</div>
+
+			</div>
+		</div>
+		<div class="flecha_down">
+			<a href="#apps" class="icon-down">
+			</a>
+		</div>
+	</section>
+
+
+	<section class="main " id="apps">
+		<div class="navigation_buttons">
+		<ul>
+			<li>
+				<a href="#graphic" class="icon-arrow-up"></a>
+			</li>
+			<li>
+				<a href="#contact" class="icon-arrow-down"></a>
+			</li>
+		</ul>
+		</div>
+		<div class="content">
+		
+			<!-- APPS content -->
+			<div class="apps">
+				<div class="single_app middle">
+					<div class="design">
+						<span style="background-image:url(images/.jpg);">
+						</span>	
+					</div>
+				</div>	
+				<div class="single_app left">
+					<div class="design">
+						<span style="background-image:url(images/m4d_app.jpg);">
+						</span>	
+					</div>
+				</div>	
+				<div class="single_app right">
+					<div class="design">
+						<span style="background-image:url(images/mobile_app.jpg);">
+						</span>	
+					</div>
+				</div>	
+
+				<div class="single_app left_short">
+					<div class="design">
+						<span style="background-image:url(images/m4d_app.jpg);">
+						</span>	
+					</div>
+				</div>	
+				<div class="single_app right_short">
+					<div class="design">
+						<span style="background-image:url(images/mobile_app.jpg);">
+						</span>	
+					</div>
+				</div>					
+			</div>
+
+		</div>
+		<div class="flecha_down">
+			<a href="#contact" class="icon-down">
+			</a>
+		</div>
+	</section>
+
+	<footer class="footer" id="contact">
+		<div class="content">
+			<h1>
+				¿Necesitas una página web, logotipo, interfaz gráfica o Aplicación móvil?
+			</h1>
+			<h2>
+				Escríbeme un mail a:
+			</h2>				
+			<div class="button_footer">
+				<div>
+					<a>
+						hola@jorgeferreiro.es
+					</a>
+				</div>
+			</div>
+			<p>
+				o rellena el <a href="">formulario</a>
+			</p>
+		</div>
+		<div class="copyright">
+			<p>
+				Página hecha por Jorge Ferreiro
+			</p>
+		</div>
+		<div class="black_background"></div>
+	</footer>
+
+	<footer class="home_footer" style="display:none;">
 		<div class="container">	
+		<div class="navigation_buttons">
+		<ul>
+			<li>
+				<a href="#">^</a>
+			</li>
+		</ul>
+		</div>
 			<div class="round_image">
 				<span class="avatar" style="background-image:url(images/avatar.png);">
 				</span>
@@ -57,12 +329,16 @@
 			</p>
 			<p class="right">
 				¿Buscas programador o diseñador?
-				<a href="#">
+				<a href="#contacto">
 					¡Escríbeme!
 				</a>
 			</p>
 		</div>
 	</footer>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/animations.js"></script>
 
 </body>
 </html>

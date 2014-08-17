@@ -440,6 +440,27 @@ a, p, h1, h2, h3, h4, li, ul
     opacity: 0.1;
     filter: alpha(opacity=10); /* For IE8 and earlier */
 }
+.main .flecha_down
+{
+	width: 80px;
+	height: 40px;
+	float: left;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 20px;	
+	z-index: 1002220;
+	position: absolute; 
+	text-align: center;
+}
+.main .flecha_down a
+{
+	font-size: 3em;
+	line-height: 1em;
+	margin-left: -0.3em;
+	color: #000;
+    opacity: 0.2;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
+}
 /***
 * Graphic design
 ***/
