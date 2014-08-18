@@ -39,11 +39,22 @@
 			// what the y position of the scroll is
 			var elemento_arriba = $(this).scrollTop();
 
+
+			/** Quitar guía de iniciación **/
+			if ((elemento_arriba >= top_web -5))
+			{
+				$(".main .flecha_down").delay("100");
+				$(".main .flecha_down").animate({ 'bottom': '15px', opacity: 1 }, 500);
+			}
+
 			/** Cabecera fija **/
 
-			if ((elemento_arriba >= top_web - 50) || ((elemento_arriba >= top_grafico) || (elemento_arriba >= top_apps))) 
+			if ((elemento_arriba >= top_web)) 
 			{
 				$(".header").css({"background": "url(images/header_gradient.png) repeat-x 100% 100%"});
+			}
+			if ((elemento_arriba >= top_web - 50) || ((elemento_arriba >= top_grafico) || (elemento_arriba >= top_apps))) 
+			{
 				$(".header .logo a h1").css( "color", "#000" );
 				$(".header .nav ul li a").css( "color", "#000" );
 			}
@@ -102,12 +113,13 @@
 				$(".header .logo a h1").css( "color", "#fff" );
 				$(".header .nav ul li a").css( "color", "#fff" );
 				$(".flecha_down").css("display", "none");
+				$(".footer .content").fadeIn(1000);
+
 			}	
 			if ((elemento_arriba >= top_contacto)) {
 			 	 // if so, ad the fixed class
 				$("#n_apps").css({"display": "none"});
-				$("#n_contact").css({"display": "block"});
-				$(".footer .content").fadeIn(1000);
+				$("#n_contact").css({"display": "block"}); 
 			} 
 		  });
 

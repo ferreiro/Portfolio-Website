@@ -534,6 +534,25 @@ a, p, h1, h2, h3, h4, li, ul
 {
 	color: #fff;
 }
+.main .button_iniciacion
+{
+	width: 189px;
+	height: 190px;
+	float: left;
+	position: absolute; 
+	z-index: 1000;
+	background: url(images/btn_guide_down.png) 50% 50% no-repeat;
+	bottom:50%;
+	left: 50%;
+	margin-bottom: -95px;
+	margin-left: -95px;
+
+}
+#flecha_web
+{
+	opacity: 0;
+	bottom: 120px;	
+}
 .main .flecha_down
 {
 	width: 80px;
@@ -542,9 +561,12 @@ a, p, h1, h2, h3, h4, li, ul
 	left: 50%;
 	margin-left: -40px;
 	bottom: 15px;	
-	z-index: 1002220;
+	z-index: 10000000000;
 	position: absolute; 
 	text-align: center;
+
+	opacity: 0;
+	bottom: 200px;	
 }
 .main .flecha_down a
 {
@@ -553,8 +575,8 @@ a, p, h1, h2, h3, h4, li, ul
 	font-size: 2.8em;
 	line-height: normal;
 	color: #000;
-    opacity: 0.2;
-    filter: alpha(opacity=20); /* For IE8 and earlier */
+    opacity: 0.25;
+    filter: alpha(opacity=25); /* For IE8 and earlier */
 }
 
 /*******************
@@ -949,12 +971,10 @@ a, p, h1, h2, h3, h4, li, ul
 {
 	width: 100%;
 	height: 50px;
-	border-top: 1px solid #000;
-
 	float: left;
 	clear: both;
 	position: absolute;
-	bottom: 0;
+	bottom: 2px;
 	left: 0;
 }
 .footer .copyright p
@@ -964,7 +984,7 @@ a, p, h1, h2, h3, h4, li, ul
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	opacity: 0.7;
+	opacity: 0.8;
 	color: #fff;
 	margin-top: 1em;
 }
